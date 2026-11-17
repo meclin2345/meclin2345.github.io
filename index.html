@@ -212,9 +212,9 @@
     background: var(--gold);
     transform: translate(var(--off), var(--off));
   }
-  .portrait img {
+    .portrait img {
     position: relative; border-radius: 18px;
-    width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% 30%;
+    width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% 30%;
   }
   @media (prefers-reduced-motion: no-preference) {
     .portrait::before { animation: settle 1s cubic-bezier(.2,.7,.2,1) .25s both; }
