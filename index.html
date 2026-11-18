@@ -440,6 +440,7 @@
     <section id="news" aria-labelledby="news-h">
       <div class="sec-head"><h2 id="news-h">News</h2></div>
       <ul class="news">
+        <li><span class="when">Nov '26</span><span>🚀 Released <a href="#icwsm-datahub">ICWSM-DataHub</a>, an open catalog of all 124 ICWSM Dataset Track papers that checks whether each dataset can still be used.</span></li>
         <li><span class="when">Dec '26</span><span>🎤 Presenting MedFactIndia at <a href="#c2">PACLIC 40</a> in Taiwan, December 10–12.</span></li>
         <li><span class="when">2026</span><span>🎉 Dual-path verification paper accepted in the <a href="#j2">Journal of King Saud University – Computer and Information Sciences</a>.</span></li>
         <li><span class="when">2026</span><span>📄 Three shared-task system papers published at <a href="#s3">DravidianLangTech @ ACL 2026</a>.</span></li>
@@ -481,10 +482,23 @@
           <button type="button" data-filter="health" aria-pressed="false">Health</button>
           <button type="button" data-filter="legal" aria-pressed="false">Legal</button>
           <button type="button" data-filter="audit" aria-pressed="false">LLM audits</button>
+          <button type="button" data-filter="meta" aria-pressed="false">Open source</button>
         </div>
       </div>
 
       <div class="cards" id="dataset-list">
+        <article class="card" id="icwsm-datahub" data-tags="meta">
+          <div class="card-top"><span class="pill out">Released, CC-BY 4.0</span><span class="pill">Computational social science</span><span class="pill">Open source</span></div>
+          <h3><a href="https://meclin2345.github.io/icwsm-datahub/">ICWSM-DataHub</a></h3>
+          <p>A searchable catalog of every dataset paper in the ICWSM Dataset Track (2020–2026). An LLM coded each paper into 65 fields, each backed by a verbatim quote from the paper. Every dataset link was then tested live, and is re-checked every month.</p>
+          <p class="finding">98% of the dataset links still work, but only 72% of the datasets can be used as published. Most of the rest are gated on purpose or are Twitter/X post IDs that now need a paid API.</p>
+          <dl class="facts">
+            <dt>Size</dt><dd>124 dataset papers, 152 fields each</dd>
+            <dt>Formats</dt><dd>CSV, Parquet, JSON, Croissant</dd>
+            <dt>Explore</dt><dd><a href="https://meclin2345.github.io/icwsm-datahub/">Catalog and story</a> · <a href="https://github.com/meclin2345/icwsm-datahub">Code</a></dd>
+          </dl>
+        </article>
+
         <article class="card" data-tags="misinfo">
           <div class="card-top"><span class="pill out">Published</span><span class="pill">Misinformation</span><span class="pill">Ph.D.</span></div>
           <h3>TamilFacts-X</h3>
